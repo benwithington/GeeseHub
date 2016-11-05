@@ -4,6 +4,83 @@ $(document).ready(function () {
             console.log("alex is a stupid kent");
       });
   
+    
+    
+    $.getJSON( "./resources/search.json", function( data ) {
+  var items = [];
+  $.each( data, function(url) {
+    items.push( "<li id='"+url+"</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});
+    
+    
+    
+    
+(function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "goose",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#gooseimages" );
+        if ( i === 3 ) {
+          return false;
+        }
+      });
+    });
+})();
+    
+    (function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "geese",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      console.log(data);
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#geeseimages" );
+        if ( i === 8 ) {
+          return false;
+        }
+      });
+    });
+})();
+    
+(function() {
+  var spotifyAPI = "https://api.spotify.com/v1/search?query=goose&offset=0&limit=20&type=artist&market=US";
+  $.getJSON( spotifyAPI, {})
+    .done(function( data ) {
+      
+      
+      $.each( eval(data), function( i, artists ) {
+          
+          console.log(data);
+              for (i = 0; i < 20; i++) { 
+                  
+                        $( "<a id='"+i+"'>" ).attr( "href", artists.items[i].external_urls.spotify ).appendTo( "#spotifyimages");
+                        $( "<img>" ).attr( "src", artists.items[i].images[0].url ).appendTo( "#"+i+"" );
+              }
+        if ( i === 20 ) {
+          return false;
+        }
+      });
+    });
+})();
+
+    
+    
+    
+    
 });
     
     
