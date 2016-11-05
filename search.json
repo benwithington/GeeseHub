@@ -1,0 +1,503 @@
+{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=goose&offset=0&limit=20&type=artist",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6h76MLMaPUoWVPC7VnEw86"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5951
+      },
+      "genres" : [ "children's music" ],
+      "href" : "https://api.spotify.com/v1/artists/6h76MLMaPUoWVPC7VnEw86",
+      "id" : "6h76MLMaPUoWVPC7VnEw86",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2cb676898a757ee7c9407108d0fe67c6832130fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/faccf5a7b53b106aee0f95b10c3d806f74841f65",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/85217d1f1969923708e2761d2524fe1859fcf5a8",
+        "width" : 64
+      } ],
+      "name" : "Mother Goose Club",
+      "popularity" : 49,
+      "type" : "artist",
+      "uri" : "spotify:artist:6h76MLMaPUoWVPC7VnEw86"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3gAnduA93Ykv75yNrwXhz5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 18799
+      },
+      "genres" : [ "alternative dance", "belgian rock", "dance-punk", "electro house", "electroclash", "electronic", "indietronica", "new rave" ],
+      "href" : "https://api.spotify.com/v1/artists/3gAnduA93Ykv75yNrwXhz5",
+      "id" : "3gAnduA93Ykv75yNrwXhz5",
+      "images" : [ {
+        "height" : 563,
+        "url" : "https://i.scdn.co/image/834d64c0bca061fbeedda58765e0f371e06244bd",
+        "width" : 1000
+      }, {
+        "height" : 360,
+        "url" : "https://i.scdn.co/image/ce91e7258270a2ebff753429be260d3a5850a256",
+        "width" : 640
+      }, {
+        "height" : 113,
+        "url" : "https://i.scdn.co/image/ed1b96371795c6f377f89ba256a9f13df98a008f",
+        "width" : 200
+      }, {
+        "height" : 36,
+        "url" : "https://i.scdn.co/image/18e5857939acdefa89dd297d786f3a3a30d9880e",
+        "width" : 64
+      } ],
+      "name" : "Goose",
+      "popularity" : 42,
+      "type" : "artist",
+      "uri" : "spotify:artist:3gAnduA93Ykv75yNrwXhz5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0sgZD5vkGo0IsvDIR6Orli"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 161
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0sgZD5vkGo0IsvDIR6Orli",
+      "id" : "0sgZD5vkGo0IsvDIR6Orli",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/26a44e66498a7b01671126c5d2a59d0c9aa8aece",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/863eb6d11640787653bc6fd8fbec2a97a03229cc",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/4833e91d36a60cd3ddcdb075ef06370ff1f35be6",
+        "width" : 64
+      } ],
+      "name" : "Charles Goose",
+      "popularity" : 32,
+      "type" : "artist",
+      "uri" : "spotify:artist:0sgZD5vkGo0IsvDIR6Orli"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6qbCITYpFrtxDyQlv2UOMP"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 73
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6qbCITYpFrtxDyQlv2UOMP",
+      "id" : "6qbCITYpFrtxDyQlv2UOMP",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/f480b00b9a15577bb4a0e328b7d13d92d25c2fe5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8bb8ab2abfaa1bd3470eae83871495f42c37bffe",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c6c6578a216c6462b52aa11a9cf9bc106c29e01e",
+        "width" : 64
+      } ],
+      "name" : "Mother Goose",
+      "popularity" : 26,
+      "type" : "artist",
+      "uri" : "spotify:artist:6qbCITYpFrtxDyQlv2UOMP"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1fteJUdGkr1zNK1vVQmo7e"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 828
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1fteJUdGkr1zNK1vVQmo7e",
+      "id" : "1fteJUdGkr1zNK1vVQmo7e",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3da38f3807fb4c7fde7071bac022f71550100a4e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/38754834596c32a322807d67b853a96887b56b8e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/4a486ed5fc1701cbe8d59b40081d3b15ec399214",
+        "width" : 64
+      } ],
+      "name" : "Goose",
+      "popularity" : 32,
+      "type" : "artist",
+      "uri" : "spotify:artist:1fteJUdGkr1zNK1vVQmo7e"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/70jJ6lRcZAXn0cnfR3GLpL"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1328
+      },
+      "genres" : [ "country rock", "outlaw country", "southern rock" ],
+      "href" : "https://api.spotify.com/v1/artists/70jJ6lRcZAXn0cnfR3GLpL",
+      "id" : "70jJ6lRcZAXn0cnfR3GLpL",
+      "images" : [ {
+        "height" : 600,
+        "url" : "https://i.scdn.co/image/4cf1b66b3da54d1998d2f4e5f7645e8036386ac2",
+        "width" : 600
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8f63fb5f65b8cbd530feed88a7af6652a4f0194f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/17c2822f8c86dd8fd022ac08baefe6955adec12c",
+        "width" : 64
+      } ],
+      "name" : "Goose Creek Symphony",
+      "popularity" : 22,
+      "type" : "artist",
+      "uri" : "spotify:artist:70jJ6lRcZAXn0cnfR3GLpL"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4JP4Fq5xI2TaoBZB8qfvcl"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 219
+      },
+      "genres" : [ "deep tropical house" ],
+      "href" : "https://api.spotify.com/v1/artists/4JP4Fq5xI2TaoBZB8qfvcl",
+      "id" : "4JP4Fq5xI2TaoBZB8qfvcl",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e4017a738a366ead0dbfdf6d3ad3ab87967b17e1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5fb92cf5e48b1a04a4133d152ba0a7d710a71c81",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98da94695cfd3b2edec1f338529048470f0a6a41",
+        "width" : 64
+      } ],
+      "name" : "Shiny Goose",
+      "popularity" : 31,
+      "type" : "artist",
+      "uri" : "spotify:artist:4JP4Fq5xI2TaoBZB8qfvcl"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7BzEKSgHp2yrNC6w5NkFhQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 12017
+      },
+      "genres" : [ "anime", "j-idol", "j-pop", "j-poprock", "j-rock" ],
+      "href" : "https://api.spotify.com/v1/artists/7BzEKSgHp2yrNC6w5NkFhQ",
+      "id" : "7BzEKSgHp2yrNC6w5NkFhQ",
+      "images" : [ {
+        "height" : 568,
+        "url" : "https://i.scdn.co/image/629f181ff00c46e4cf3492ffc660bc4bd0f00c32",
+        "width" : 640
+      }, {
+        "height" : 266,
+        "url" : "https://i.scdn.co/image/309ec2a62d9a94e3acfc59ae55f7bb0f31d63f86",
+        "width" : 300
+      }, {
+        "height" : 57,
+        "url" : "https://i.scdn.co/image/ffad79d3c76e9e339c4e656deb55b2c8f1b446c3",
+        "width" : 64
+      } ],
+      "name" : "Goose house",
+      "popularity" : 37,
+      "type" : "artist",
+      "uri" : "spotify:artist:7BzEKSgHp2yrNC6w5NkFhQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7aufdCkGeBn79Gmb6ir6ys"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 83
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7aufdCkGeBn79Gmb6ir6ys",
+      "id" : "7aufdCkGeBn79Gmb6ir6ys",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/4a672571134f3564774d676348637fc9a24a6063",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/513b5d45531e01f6e03dc17bafb0c16eac0989b5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/dd674f92b3eddecd9da0a6e6351baa7c7d6ebb14",
+        "width" : 64
+      } ],
+      "name" : "Father Goose",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:7aufdCkGeBn79Gmb6ir6ys"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5tkITWzssc9z9hu7ZEOCXz"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 39
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5tkITWzssc9z9hu7ZEOCXz",
+      "id" : "5tkITWzssc9z9hu7ZEOCXz",
+      "images" : [ {
+        "height" : 600,
+        "url" : "https://i.scdn.co/image/cdff1054418c925d64a8e3dc1f6be0132834fedb",
+        "width" : 600
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9f11e86d296ee28ebe853794c464634d28c13008",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/945016b2e87fbbd70d632ed9c4acd6601bb265e8",
+        "width" : 64
+      } ],
+      "name" : "Goose",
+      "popularity" : 4,
+      "type" : "artist",
+      "uri" : "spotify:artist:5tkITWzssc9z9hu7ZEOCXz"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7rWXQdcwLIOUSS40kh6HLe"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 16
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7rWXQdcwLIOUSS40kh6HLe",
+      "id" : "7rWXQdcwLIOUSS40kh6HLe",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/0fc5d66984696c45e87f7707508a1bfca076cefe",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c19a869f2920b5c3935252d5c43179880fa29323",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/6946e404ae0788d4b706ec033b7adfc221759458",
+        "width" : 64
+      } ],
+      "name" : "Goose",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:7rWXQdcwLIOUSS40kh6HLe"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/01YVQjFFgSmCdbFM2gzn3p"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1345
+      },
+      "genres" : [ "mathcore", "nintendocore" ],
+      "href" : "https://api.spotify.com/v1/artists/01YVQjFFgSmCdbFM2gzn3p",
+      "id" : "01YVQjFFgSmCdbFM2gzn3p",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/a8af44de9850aa18bdc84e8e78408959565c0298",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a443acdd01aa516f4ae2c66d4d90f499fccd3f01",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/daa892e85458b7119862e3451a63481bb2c4c155",
+        "width" : 64
+      } ],
+      "name" : "Duck Duck Goose",
+      "popularity" : 14,
+      "type" : "artist",
+      "uri" : "spotify:artist:01YVQjFFgSmCdbFM2gzn3p"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6E2ZU0iOk5QeVhpdPRKEle"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6E2ZU0iOk5QeVhpdPRKEle",
+      "id" : "6E2ZU0iOk5QeVhpdPRKEle",
+      "images" : [ ],
+      "name" : "Father Goose feat. Coolie Ranx",
+      "popularity" : 12,
+      "type" : "artist",
+      "uri" : "spotify:artist:6E2ZU0iOk5QeVhpdPRKEle"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3L1wON2FtoVuF2tCaAqw7O"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 42
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3L1wON2FtoVuF2tCaAqw7O",
+      "id" : "3L1wON2FtoVuF2tCaAqw7O",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/790fa78d9fab779b08b6f70fe11791650dd967f6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4ed7a45c917c073dcaa20a70ea44f6f3ff171a28",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b06adfbb1d49d724df83594a314291ebe34503da",
+        "width" : 64
+      } ],
+      "name" : "Alex Goose",
+      "popularity" : 4,
+      "type" : "artist",
+      "uri" : "spotify:artist:3L1wON2FtoVuF2tCaAqw7O"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/02Q9caN0r1SXGNx2ZVxVpC"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 154
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/02Q9caN0r1SXGNx2ZVxVpC",
+      "id" : "02Q9caN0r1SXGNx2ZVxVpC",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6d4c9c5f691857b87b3a94c50804c69038f05d78",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1bd895e1043a0d4447d657036d52a84c7a9b998b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/cd8da9e00075865faa680c3aeecdf1eb6c194111",
+        "width" : 64
+      } ],
+      "name" : "Goose & Fox",
+      "popularity" : 8,
+      "type" : "artist",
+      "uri" : "spotify:artist:02Q9caN0r1SXGNx2ZVxVpC"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/12PWMACRmsZBByhouJXRnc"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/12PWMACRmsZBByhouJXRnc",
+      "id" : "12PWMACRmsZBByhouJXRnc",
+      "images" : [ ],
+      "name" : "Bernacle Goose",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:12PWMACRmsZBByhouJXRnc"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/56M4ynSaZw8tKBvCCWr9LP"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/56M4ynSaZw8tKBvCCWr9LP",
+      "id" : "56M4ynSaZw8tKBvCCWr9LP",
+      "images" : [ ],
+      "name" : "Bean Goose",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:56M4ynSaZw8tKBvCCWr9LP"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1P9w0TR7wrI0whhhF2jgK1"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1P9w0TR7wrI0whhhF2jgK1",
+      "id" : "1P9w0TR7wrI0whhhF2jgK1",
+      "images" : [ ],
+      "name" : "Greylag Goose",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1P9w0TR7wrI0whhhF2jgK1"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4dB5OFAJhU0fdGOf1DTsoK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4dB5OFAJhU0fdGOf1DTsoK",
+      "id" : "4dB5OFAJhU0fdGOf1DTsoK",
+      "images" : [ ],
+      "name" : "Barnacle Goose",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4dB5OFAJhU0fdGOf1DTsoK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/14Ybs2F4d0xnc6Bp28e1aO"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/14Ybs2F4d0xnc6Bp28e1aO",
+      "id" : "14Ybs2F4d0xnc6Bp28e1aO",
+      "images" : [ ],
+      "name" : "Canada Goose",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:14Ybs2F4d0xnc6Bp28e1aO"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=goose&offset=20&limit=20&type=artist",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 137
+  }
+}
