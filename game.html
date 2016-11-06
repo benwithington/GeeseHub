@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
     TITLE
     <a href="index.html">HOME</a>
+=======
+>>>>>>> origin/master
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
@@ -13,14 +16,26 @@ canvas {
 </head>
 <body onload="startGame()">
 <script>
+<<<<<<< HEAD
 var myGamePiece;
 var myObstacles = [];
 var myScore;
+=======
+
+var myGamePiece;
+var myObstacles = [];
+var myScore;
+
+>>>>>>> origin/master
 function startGame() {
   myGamePiece = new component(30, 30, "./goose.gif", 10, 120, "image");
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -38,6 +53,10 @@ var myGameArea = {
         clearInterval(this.interval);
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 function component(width, height, color, x, y, type) {
     this.type = type;
     if (type == "image") {
@@ -82,6 +101,10 @@ function component(width, height, color, x, y, type) {
         return crash;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
@@ -113,10 +136,15 @@ function updateGameArea() {
     myGamePiece.newPos();
     myGamePiece.update();
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
 }
+<<<<<<< HEAD
 function moveup() {
     myGamePiece.speedY = -1;
 }
@@ -129,6 +157,25 @@ function moveleft() {
 function moveright() {
     myGamePiece.speedX = 1;
 }
+=======
+
+function moveup() {
+    myGamePiece.speedY = -1;
+}
+
+function movedown() {
+    myGamePiece.speedY = 1;
+}
+
+function moveleft() {
+    myGamePiece.speedX = -1;
+}
+
+function moveright() {
+    myGamePiece.speedX = 1;
+}
+
+>>>>>>> origin/master
 function clearmove() {
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;
@@ -148,4 +195,8 @@ function clearmove() {
 </FORM>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/master
