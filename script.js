@@ -6,7 +6,7 @@ $(document).ready(function () {
   
     
     
-    $.getJSON( "./resources/search.json", function( data ) {
+  /*  $.getJSON( "./resources/search.json", function( data ) {
   var items = [];
   $.each( data, function(url) {
     items.push( "<li id='"+url+"</li>" );
@@ -17,7 +17,7 @@ $(document).ready(function () {
     html: items.join( "" )
   }).appendTo( "body" );
 });
-    
+    */
     
     
     
@@ -31,7 +31,7 @@ $(document).ready(function () {
     .done(function( data ) {
       $.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#gooseimages" );
-        if ( i === 3 ) {
+        if ( i === 9 ) {
           return false;
         }
       });
@@ -49,7 +49,7 @@ $(document).ready(function () {
       console.log(data);
       $.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#geeseimages" );
-        if ( i === 8 ) {
+        if ( i === 9 ) {
           return false;
         }
       });
@@ -57,7 +57,7 @@ $(document).ready(function () {
 })();
     
 (function() {
-  var spotifyAPI = "https://api.spotify.com/v1/search?query=goose&offset=0&limit=20&type=artist&market=US";
+  var spotifyAPI = "https://api.spotify.com/v1/search?query=goose&offset=0&limit=10&type=artist";
   $.getJSON( spotifyAPI, {})
     .done(function( data ) {
       
@@ -65,9 +65,9 @@ $(document).ready(function () {
       $.each( eval(data), function( i, artists ) {
           
           console.log(data);
-              for (i = 0; i < 20; i++) { 
+              for (i = 0; i < 10; i++) { 
                   
-                        $( "<a id='"+i+"'>" ).attr( "href", artists.items[i].external_urls.spotify ).appendTo( "#spotifyimages");
+                        $( "<a target='_blank' id='"+i+"'>" ).attr( "href", artists.items[i].external_urls.spotify ).appendTo( "#spotifyimages");
                         $( "<img>" ).attr( "src", artists.items[i].images[0].url ).appendTo( "#"+i+"" );
               }
         if ( i === 20 ) {
@@ -76,8 +76,22 @@ $(document).ready(function () {
       });
     });
 })();
-
     
+   
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+    
+  $( ".header-image" ).hover(
+  function() {
+      console.log("bounce");
+    $(this).animateCss('tada'); 
+  });  
     
     
     

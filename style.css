@@ -1,12 +1,19 @@
 .header{
 font-size: 100px;
     text-align: left;
-    background-image: url(resources/Goose%20banner.png);
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-position: right;
     color: #fff;
+    background-color: #8600e3;
     height: 300px;
+    position:relative;
+    z-index: 4;
+}
+.header-image{
+    height: 230px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
 }
 html{ 
     font-size: 30px !important;
@@ -16,12 +23,24 @@ body{
     margin: 0;
     
 }
+com{font-size: 40px;}
 #geesehub{
     padding: 40px;
     padding-top: 90px;
     font-family: arial;
     
 }
+#gametab a{text-decoration: none;
+color: #000;}
+#duckgame{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    transition: all 0.2s ease-in-out;
+}
+#duckgame:hover{
+    box-shadow: 10px 10px 36px -1px rgba(0,0,0,0.57);
+    transition: all 0.2s ease-in-out;
+}
+.gametitle{font-family: impact;}
 .main-content{
     font-size: 20px !important;
     color: green;
@@ -35,4 +54,11 @@ body{
 #gooseimages img,#geeseimages img, #spotifyimages img{
     width: 200px;
     height: 200px;
+    margin: 20px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    transition: all 0.2s ease-in-out;
+}
+#gooseimages img:hover, #geeseimages img:hover, #spotifyimages img:hover{
+    box-shadow: 10px 10px 36px -1px rgba(0,0,0,0.57);
+    transition: all 0.2s ease-in-out;
 }
