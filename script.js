@@ -102,7 +102,20 @@ function removehonk() {
    $("#honktext").addClass("invisible");
 }
     
-    
+$.get( "http://35.161.254.56", function( data4 ) {
+  //$( ".majestic-out" ).html( data );
+    console.log("majestic:");
+  console.log(data4);
+        $.each( data4, function( i, element ) {
+            console.log(element);
+            
+            $( "<div>" ).html( "Name: "+ element.Item).appendTo( "#majestic-out" );
+            
+            $( "<div>" ).html( "Topic: "+ element.TopicalTrustFlow_Topic_0+"<br>").appendTo( "#majestic-out" );
+            
+        });
+});  
+ 
     
     
     
