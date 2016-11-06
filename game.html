@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-   
+
 
 <head>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -90,7 +90,7 @@ function component(width, height, color, x, y, type) {
         return crash;
     }
 }
-    
+
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
@@ -122,7 +122,7 @@ function updateGameArea() {
     myGamePiece.newPos();
     myGamePiece.update();
 }
-    
+
 function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
@@ -171,7 +171,7 @@ function clearmove() {
   <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 </div>
 first click in the game window, then you may use w,a,s and d or the buttons to move the goose.
-<p>The score will count one point for each frame you manage to "stay alive".</p>
+<p>"stay alive" - Goose Out.</p>
 
 <FORM>
 <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh Game">
@@ -179,5 +179,5 @@ first click in the game window, then you may use w,a,s and d or the buttons to m
 
 </body>
 </html>
-    
+
 <script defer src="gamescript.js"></script>
