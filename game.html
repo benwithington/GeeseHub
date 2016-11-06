@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-    TITLE
-    <a href="index.html">HOME</a>
-=======
->>>>>>> origin/master
+   
+
 <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
@@ -16,26 +14,20 @@ canvas {
 </head>
 <body onload="startGame()">
 <script>
-<<<<<<< HEAD
 var myGamePiece;
 var myObstacles = [];
 var myScore;
-=======
 
 var myGamePiece;
 var myObstacles = [];
 var myScore;
 
->>>>>>> origin/master
 function startGame() {
   myGamePiece = new component(30, 30, "./goose.gif", 10, 120, "image");
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -53,10 +45,7 @@ var myGameArea = {
         clearInterval(this.interval);
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 function component(width, height, color, x, y, type) {
     this.type = type;
     if (type == "image") {
@@ -101,10 +90,7 @@ function component(width, height, color, x, y, type) {
         return crash;
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
+    
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
@@ -123,8 +109,8 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        myObstacles.push(new component(10, height, "purple", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "purple", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].speedX = -1;
@@ -136,15 +122,11 @@ function updateGameArea() {
     myGamePiece.newPos();
     myGamePiece.update();
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
+    
 function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
 }
-<<<<<<< HEAD
 function moveup() {
     myGamePiece.speedY = -1;
 }
@@ -157,9 +139,9 @@ function moveleft() {
 function moveright() {
     myGamePiece.speedX = 1;
 }
-=======
 
-function moveup() {
+
+/*function moveup() {
     myGamePiece.speedY = -1;
 }
 
@@ -173,13 +155,14 @@ function moveleft() {
 
 function moveright() {
     myGamePiece.speedX = 1;
-}
+}*/
 
->>>>>>> origin/master
 function clearmove() {
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;
 }
+
+
 </script>
 <div style="text-align:center;width:480px;">
   <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
@@ -187,7 +170,7 @@ function clearmove() {
   <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
   <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 </div>
-
+first click in the game window, then you may use w,a,s and d or the buttons to move the goose.
 <p>The score will count one point for each frame you manage to "stay alive".</p>
 
 <FORM>
@@ -195,8 +178,6 @@ function clearmove() {
 </FORM>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> origin/master
+    
+<script defer src="gamescript.js"></script>

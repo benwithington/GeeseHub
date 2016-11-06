@@ -3,8 +3,9 @@
 <link rel="shortcut icon"
  href="./favicon.ico" />
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-
+<title>GeeseHub</title>
 <head>
+    <meta name="theme-color" content="#8600e3" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css" href="./animate.css">
@@ -27,17 +28,32 @@
   <div class="mdl-tabs__tab-bar">
       <a href="#hometab" class="mdl-tabs__tab is-active">Home</a>
       <a href="#factstab" class="mdl-tabs__tab">Facts</a>
-      <a href="#jokestab" class="mdl-tabs__tab">Jokes</a>
-      <a href="#gametab" class="mdl-tabs__tab">Videos</a>
+      <a href="#videotab" class="mdl-tabs__tab">Videos</a>
+      <a href="#gametab" class="mdl-tabs__tab">Gaming</a>
   </div>
 <div class="main-content">
-  <div class="mdl-tabs__panel is-active" id="hometab">
     
+  <div class="mdl-tabs__panel is-active" id="hometab">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--8-col">
       <!--<div class="tabtitle">Homepage</div>-->
       <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--8-col">goose Trends--></div>
+          <div class="mdl-cell mdl-cell--6-col">
+          <div style="line-height: 30px;color: #000;">
+          <p style="font-size: 20px">Goose morning, afternoon or evening (depending on when you are geesing this),
+
+Here at GeeseHub, we are injecting you with a daily dose of geesy gooseness. We have gather a fresh batch of finely curated images, gifs, spotify tunes, and a brand new flappy geese-ish game.
+
+Thank you and goose-bye,
+
+Goose Willis xoxox
+              </p><img style="width: 100px;"src="resources/goosewillis.jpeg">
+               
+              </div>
           
-          <div class="mdl-cell mdl-cell--4-col"><script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/760_RC08/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"goose","geo":"","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"q=goose","guestPath":"https://www.google.co.uk:443/trends/embed/"}); </script></div>
+          </div>
+          
+          <div class="mdl-cell mdl-cell--6-col"><script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/760_RC08/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"goose","geo":"","time":"today 5-y"}],"category":0,"property":""}, {"exploreQuery":"q=goose","guestPath":"https://www.google.co.uk:443/trends/embed/"}); </script></div>
         </div>
         
        <div class="mdl-grid">
@@ -45,30 +61,79 @@
               <hr>
                          
               <div class="my-new-list"></div>
-              
+              <br>
+              <h2>Goose from Spotify</h2>
+              <div id="spotifyimages"></div>
+              <br>
+              <h2>Geese gifs from Giphy</h2>
+              <div id="giphyimg"></div>
               <br>
               <h2>Goose from Flickr</h2>
               <div id="gooseimages"></div>
               <br>
               <h2>Geese from Flickr</h2>
               <div id="geeseimages"></div>
-              <br>
-              <h2>Goose from Spotify</h2>
-              <div id="spotifyimages"></div>
               
               
            </div>
+      </div>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+            <a class="twitter-timeline" data-theme="light" data-link-color="#981CEB" href="https://twitter.com/I_am_a_goose">Tweets by I_am_a_goose</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
   </div>
   <div class="mdl-tabs__panel" id="factstab">
     facts
   </div>
-  <div class="mdl-tabs__panel" id="jokestab">
-    Jookes
+  <div class="mdl-tabs__panel" id="videotab">
+    
+      <br><br>
+    <div id="buttons">
+    <label> <input id="query" value='geese' type="text"/><button id="search-button"    onclick="keyWordsearch()">Search</button></label>
+    <div id="container">
+    <h1>Search Results</h1>
+    <ul id="results"></ul>
+    </div>
+<script>
+ function keyWordsearch(){
+    gapi.client.setApiKey('AIzaSyCgPizYbQ5EE9Q8sAXsYJ8ZphAi58pVKno');
+    gapi.client.load('youtube', 'v3', function(){
+            makeRequest();
+    });
+}
+function makeRequest(){
+    var q = $('#query').val();
+    var request = gapi.client.youtube.search.list({
+            q: q,
+            part: 'snippet',
+            maxResults: 10
+    });
+console.log(request);
+    request.execute(function(response)  {
+            $('#results').empty()
+            var srchItems = response.result.items;
+            $.each(srchItems, function(index, item){
+            vidTitle = item.snippet.title;
+            vidThumburl =  item.snippet.thumbnails.default.url;
+            vidThumbimg = '<pre><img id="thumb" src="'+vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';
+            $('#results').append('<pre>' + vidTitle + vidThumbimg +   '</pre>');
+    })
+  })
+}
+ </script>
+ 
+ <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">   </script>
+
+      
   </div>
+    </div>
     <div class="mdl-tabs__panel" id="gametab">
     <br><br>
-        <a href="game.html">
+        
+        
+        
+        
         <div id="duckgame" style="background-color: #f6f6f6;"class="mdl-grid">
           <div class="mdl-cell mdl-cell--6-col">
               <h1 class="gametitle">Goose Game</h1>
@@ -81,9 +146,9 @@
             </div>  
             
       </div>
-            </a>
-        
-        
+        <div class="gamecontain">
+        <iframe style="margin:auto;height: 700px; width: 500px;"src="./game.html"></iframe>
+        </div>
         
         
         

@@ -1,4 +1,10 @@
+
 $(document).ready(function () {
+    
+    
+    
+    
+    
     console.log("loaded");
       $(document).on('click', '#geesehub', function (e) {
             console.log("alex is a stupid kent");
@@ -31,7 +37,7 @@ $(document).ready(function () {
     .done(function( data ) {
       $.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#gooseimages" );
-        if ( i === 9 ) {
+        if ( i === 8 ) {
           return false;
         }
       });
@@ -49,7 +55,7 @@ $(document).ready(function () {
       console.log(data);
       $.each( data.items, function( i, item ) {
         $( "<img>" ).attr( "src", item.media.m ).appendTo( "#geeseimages" );
-        if ( i === 9 ) {
+        if ( i === 8 ) {
           return false;
         }
       });
@@ -65,12 +71,12 @@ $(document).ready(function () {
       $.each( eval(data), function( i, artists ) {
           
           console.log(data);
-              for (i = 0; i < 10; i++) { 
+              for (i = 0; i < 9; i++) { 
                   
                         $( "<a target='_blank' id='"+i+"'>" ).attr( "href", artists.items[i].external_urls.spotify ).appendTo( "#spotifyimages");
                         $( "<img>" ).attr( "src", artists.items[i].images[0].url ).appendTo( "#"+i+"" );
               }
-        if ( i === 20 ) {
+        if ( i === 10 ) {
           return false;
         }
       });
@@ -92,6 +98,51 @@ $.fn.extend({
       console.log("bounce");
     $(this).animateCss('tada'); 
   });  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    (function() {
+  var giphyAPI = "http://api.giphy.com/v1/gifs/search?q=goose&api_key=dc6zaTOxFJmzC";
+  $.getJSON( giphyAPI, {})
+    .done(function( data3 ) {
+      console.log("giphy:");
+      console.log(data3);
+      $.each( eval(data3), function( i, data ) {
+          
+          
+              for (i = 0; i < 9; i++) { 
+                  
+                        //$( "<a target='_blank' id='"+i+"'>" ).attr( "href", artists.items[i].external_urls.spotify ).appendTo( "#spotifyimages");
+                        $( "<video loop='loop' autoplay='autoplay'>" ).attr( "src", data[i].images.fixed_width.mp4 ).appendTo( "#giphyimg" );
+              }
+        if ( i === 10 ) {
+          return false;
+        }
+      });
+    });
+})();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

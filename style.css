@@ -32,20 +32,24 @@ com{font-size: 40px;}
 }
 #gametab a{text-decoration: none;
 color: #000;}
-#duckgame{
+/*#duckgame{
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
     transition: all 0.2s ease-in-out;
 }
 #duckgame:hover{
     box-shadow: 10px 10px 36px -1px rgba(0,0,0,0.57);
     transition: all 0.2s ease-in-out;
-}
+}*/
 .gametitle{font-family: impact;}
 .main-content{
     font-size: 20px !important;
     color: green;
     max-width: 70vw;
     margin-left: 15vw;
+}
+.gamecontain{
+    margin:auto;
+    
 }
 .mdl-tabs__tab-bar{
     background-color: #ffc600;
@@ -61,4 +65,7 @@ color: #000;}
 #gooseimages img:hover, #geeseimages img:hover, #spotifyimages img:hover{
     box-shadow: 10px 10px 36px -1px rgba(0,0,0,0.57);
     transition: all 0.2s ease-in-out;
+}
+#giphyimg video{
+    margin: 20px;
 }
