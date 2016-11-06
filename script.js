@@ -6,10 +6,7 @@ $(document).ready(function () {
     
     
     console.log("loaded");
-      $(document).on('click', '#geesehub', function (e) {
-            console.log("alex is a stupid kent");
-      });
-  
+      
     
     
   /*  $.getJSON( "./resources/search.json", function( data ) {
@@ -97,8 +94,13 @@ $.fn.extend({
   function() {
       console.log("bounce");
     $(this).animateCss('tada'); 
+      $("#honktext").removeClass("invisible");
+       window.setTimeout(removehonk,700);
   });  
     
+function removehonk() {
+   $("#honktext").addClass("invisible");
+}
     
     
     

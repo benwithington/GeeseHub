@@ -7,6 +7,21 @@ font-size: 100px;
     position:relative;
     z-index: 4;
 }
+#honktext{
+    position:absolute;
+    right: 400px;
+    top: 100px;
+    width: 200px;
+    height: 150px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    transition: all 0.4s;
+    
+}
+.invisible{
+    opacity: 0;
+    transition: all 0.4s;
+}
 .header-image{
     height: 230px;
     width: auto;
